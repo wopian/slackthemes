@@ -3,6 +3,7 @@ require 'capybara'
 require 'capybara/poltergeist'
 require 'mini_magick'
 
+# Create thumbnails of all themes
 class Screenshot
   include Capybara::DSL
   attr_accessor :theme
@@ -25,15 +26,15 @@ class Screenshot
 
   def generate_theme_image(builder)
     if File.exist? target_file
-      builder.say_status :exists, target_file, :blue
+      builder.say_status :exists, theme.type + ' ' + theme.name + ' ' + theme.shade, :blue
       return
     end
 
-    builder.say_status :generating, target_file, :green
+    builder.say_status :generating, theme.type + ' ' + theme.name + ' ' + theme.shade, :green
 
     visit '/'
     within ".theme_#{theme.slug}" do
-      choose 'sidebar_theme_rd'
+      find('[name=sidebar_theme_rd]').trigger('click')
     end
     sleep 1
 
@@ -43,11 +44,11 @@ class Screenshot
   end
 
   def create_thumbnail
-    file = Tempfile.new([theme.slug, ".png"])
+    file = Tempfile.new([theme.slug, '.png'])
     yield(file.path)
     MiniMagick::Tool::Convert.new do |convert|
       convert << file.path
-      convert.crop '220x220+0+0'
+      convert.crop '220x120+0+145'
       convert << target_file
     end
   ensure

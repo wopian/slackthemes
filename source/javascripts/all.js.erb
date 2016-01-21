@@ -19,7 +19,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
     function($scope, $stateParams, $state, $location) {
         var themes = {
           <%= themes.map do |theme|
-            "'#{theme.slug}': '#{theme.colors}'"
+            "'#{theme.slug}' : { colors: '#{theme.colors}', name: '#{theme.name}' }"
           end.join ",\n" %>
         };
 
@@ -38,7 +38,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
                 return;
             }
-            $scope.colors = themes[$scope.slug];
+            $scope.colors = themes[$scope.slug].colors;
+            $scope.name = themes[$scope.slug].name;
             $state.go('theme', { slug: slug });
         });
 
@@ -55,6 +56,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             $scope.text_color = parts[5];
             $scope.active_presence = parts[6];
             $scope.mention_badge = parts[7];
+            $scope.team_name = $scope.name;
 
             function updateHash() {
                 $location.hash(parts.map(function(part) {
@@ -64,7 +66,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
             if ($scope.slug === 'custom') {
                 updateHash();
-            } else if (colors !== themes[$scope.slug]) {
+            } else if (colors !== themes[$scope.slug].colors) {
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
         });

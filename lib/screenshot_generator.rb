@@ -1,16 +1,17 @@
 require 'lib/screenshot'
 
+# Initialize thumbnail builder
 class ScreenshotGenerator < ::Middleman::Extension
-  def initialize(app, options_hash={}, &block)
+  def initialize(app, options_hash = {}, &block)
     super
     app.before_build do |builder|
-      builder.say "==> Begin - Theme thumbnail generator", :green
+      builder.say '==> Theme thumbnail generator started', :green
       Screenshot.prepare
 
       themes.each do |theme|
         Screenshot.new(theme).generate_theme_image(builder)
       end
-      builder.say "==> End   - Theme thumbnail generator", :green
+      builder.say '==> Theme thumbnail generator finished', :green
     end
   end
 end

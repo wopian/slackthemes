@@ -1,0 +1,31 @@
+engines:
+  bundler-audit:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+      - javascript
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+    checks:
+      Rubocop/Metrics/LineLength:
+        enabled: false
+  eslint:
+    enabled: true
+ratings:
+  paths:
+  - "**.js"
+  - "**.rb"
+  - "**.erb"
+exclude_paths:
+  - "**.css"
+  - "**.png"
+  - "**.woff"
+  - "**.woff2"
+  - "source/CNAME"
+  - "Gemfile.lock"
+  - "Gemfile"
