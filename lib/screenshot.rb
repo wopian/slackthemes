@@ -9,7 +9,7 @@ class Screenshot
 
   def self.prepare
     Capybara.register_driver :poltergeist do |app|
-      Capybara::Poltergeist::Driver.new(app, window_size: [1280, 768])
+      Capybara::Poltergeist::Driver.new(app, window_size: [512, 512])
     end
     Capybara.default_driver = :poltergeist
     Capybara.app = ::Middleman::Application.server.inst do
@@ -48,7 +48,7 @@ class Screenshot
     MiniMagick::Tool::Convert.new do |convert|
       convert << file.path
       # original crop: '220x220+0+0'
-      convert.crop '220x120+0+0'
+      convert.crop '220x220+0+0'
       convert << target_file
     end
   ensure
