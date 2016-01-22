@@ -2445,7 +2445,7 @@ html.no_flexbox #im_browser_tokens .member_token{display:inline-block}
 #fs_modal.prefs_modal .prefs_messages_theme_preview{width:294px;min-width:294px;height:82px;min-height:82px;margin-top:-6px}
 #fs_modal.prefs_modal #prefs_emoji .emoji_preview{width:103px;height:30px;margin-top:-3px;float:right}
 #fs_modal.prefs_modal #prefs_emoji label{width:340px}
-#fs_modal.prefs_modal #prefs_themes .theme_thumb{border-radius:6px;margin:0 0 .5rem -1.35rem;width:110px;height:60px;box-shadow:0 1px 1px rgba(0,0,0,.2);display:block}
+#fs_modal.prefs_modal #prefs_themes .theme_thumb{border-radius:6px;margin:0 0 .5rem -1.35rem;width:110px;height:110px;box-shadow:0 1px 1px rgba(0,0,0,.2);display:block}
 #fs_modal.prefs_modal #prefs_themes label.theme_label{margin:0 2rem 2rem 0;padding:0 0 0 1.35rem;float:left;width:99pt;font-weight:400}
 #fs_modal.prefs_modal #prefs_themes label.theme_label input[type=radio]{margin:.25rem .25rem 0 -1.35rem;vertical-align:top}
 #fs_modal.prefs_modal #prefs_themes #prefs_themes_customize label{float:left;margin:0 1.5rem 1rem 0}
