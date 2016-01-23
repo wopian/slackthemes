@@ -26,14 +26,6 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
         $scope.$on('$stateChangeSuccess', function() {
             $scope.slug = $stateParams.slug;
         });
-        
-        $scope.$watch('name', function(name) {
-            if (!name) {
-                return;
-            }
-            $scope.name = themes[$scope.name];
-            $state.go('theme', { name: name });
-        });
 
         $scope.$watch('slug', function(slug) {
             if (!slug) {
@@ -47,6 +39,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
                 return;
             }
             $scope.colors = themes[$scope.slug];
+            $scope.name = themes[$scope.name];
             $state.go('theme', { slug: slug });
         });
 
