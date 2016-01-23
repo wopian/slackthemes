@@ -9,8 +9,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 url: "/:slug",
                 controller: 'ThemeController',
                 params: {
-                    slug: { value: '<%= themes.first.slug %>' },
-                    name: { value: '<%= themes.first.name %>' }
+                    slug: { value: '<%= themes.first.slug %>' }
                 }
             });
         $urlRouterProvider.otherwise('/<%= themes.first.slug %>');
