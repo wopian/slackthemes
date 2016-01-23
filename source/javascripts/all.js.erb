@@ -26,6 +26,14 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
         $scope.$on('$stateChangeSuccess', function() {
             $scope.slug = $stateParams.slug;
         });
+        
+        $scope.$watch('name', function(slug) {
+            if (!name) {
+                return;
+            }
+            $scope.name = themes[$scope.name];
+            $state.go('theme', { name: name });
+        });
 
         $scope.$watch('slug', function(slug) {
             if (!slug) {
