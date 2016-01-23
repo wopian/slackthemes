@@ -27,7 +27,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             $scope.slug = $stateParams.slug;
         });
         
-        $scope.$watch('name', function(slug) {
+        $scope.$watch('name', function(name) {
             if (!name) {
                 return;
             }
