@@ -10,15 +10,15 @@
 - { colors: '#009688,#00796B,#00796B,#FFFFFF,#00796B,#FFFFFF,#B2FF59,#80CBC4', type: 'hue',  name: 'Teal' }
 - { colors: '#4CAF50,#388E3C,#388E3C,#FFFFFF,#388E3C,#FFFFFF,#B2FF59,#A5D6A7', type: 'hue',  name: 'Green' }
 - { colors: '#8BC34A,#689F38,#689F38,#FFFFFF,#689F38,#FFFFFF,#B2FF59,#C5E1A5', type: 'hue',  name: 'Light Green' }
-- { colors: '#CDDC39,#AFB42B,#AFB42B,#616161,#AFB42B,#616161,#B2FF59,#616161', type: 'hue',  name: 'Lime' }
-- { colors: '#FFEB3B,#FBC02D,#FBC02D,#616161,#FBC02D,#616161,#B2FF59,#FBC02D', type: 'hue',  name: 'Yellow' }
-- { colors: '#FFC107,#FFA000,#FFA000,#757575,#FFA000,#757575,#B2FF59,#FFA000', type: 'hue',  name: 'Amber' }
+- { colors: '#CDDC39,#AFB42B,#AFB42B,#212121,#AFB42B,#212121,#B2FF59,#616161', type: 'hue',  name: 'Lime' }
+- { colors: '#FFEB3B,#FBC02D,#FBC02D,#212121,#FBC02D,#212121,#B2FF59,#FBC02D', type: 'hue',  name: 'Yellow' }
+- { colors: '#FFC107,#FFA000,#FFA000,#212121,#FFA000,#212121,#B2FF59,#FFA000', type: 'hue',  name: 'Amber' }
 - { colors: '#FF9800,#F57C00,#F57C00,#ffffff,#F57C00,#ffffff,#B2FF59,#FFCC80', type: 'hue',  name: 'Orange' }
 - { colors: '#FF5722,#E64A19,#E64A19,#ffffff,#E64A19,#ffffff,#B2FF59,#FFAB91', type: 'hue',  name: 'Deep Orange' }
 - { colors: '#795548,#5D4037,#5D4037,#ffffff,#5D4037,#ffffff,#B2FF59,#BCAAA4', type: 'hue',  name: 'Brown' }
 - { colors: '#9E9E9E,#616161,#616161,#ffffff,#616161,#ffffff,#B2FF59,#616161', type: 'hue',  name: 'Grey' }
 - { colors: '#607D8B,#546E7A,#90A4AE,#FFFFFF,#455A64,#FFFFFF,#B2FF59,#B0BEC5', type: 'hue',  name: 'Blue Grey' }
-- { colors: '#FFFFFF,#EEEEEE,#EEEEEE,#616161,#EEEEEE,#616161,#B2FF59,#616161', type: 'hue',  name: 'White' }
+- { colors: '#FFFFFF,#EEEEEE,#EEEEEE,#212121,#EEEEEE,#212121,#B2FF59,#616161', type: 'hue',  name: 'White' }
 # Dark background themes
 - { colors: '#212121,#212121,#F44336,#FFFFFF,#F44336,#FFFFFF,#F44336,#F44336', type: 'dark', name: 'Red' }
 - { colors: '#212121,#212121,#E91E63,#FFFFFF,#E91E63,#FFFFFF,#E91E63,#E91E63', type: 'dark', name: 'Pink' }
