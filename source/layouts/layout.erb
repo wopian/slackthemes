@@ -418,12 +418,12 @@
           <div id="fs_modal_header">
             <h3>Select a Material theme</h3>
           </div>
-          <div class="contents_container monkey_scroller">
-            <div class="contents" style="width: initial; max-height: calc(100vh - 60px - 118px)">
-              <div id="prefs_themes" style="max-height: calc(100vh - 60px - 118px - 2rem)">
-                <h2 class="inline_block" id="prefs_sidebar_theme">Dark Themes</h2>
+          <div class="contents_container monkey_scroller" style="padding-top: 0; padding-right: 0">
+            <div class="contents" style="width: initial;max-height: calc(100vh - 60px - 118px); overflow-y: scroll">
+              <div id="prefs_themes">
+                <h2 class="inline_block" id="prefs_sidebar_theme" style="padding-top: 2rem">Dark Themes</h2>
                 <p></p>
-                <div class="theme-row" style="display: flex; flex-wrap: wrap; max-height: calc(100vh - 60px - 118px - 2rem)">
+                <div class="theme-row" style="display: flex; flex-wrap: wrap">
                   <!-- Output themes -->
                   <%= yield %>
                 </div>
