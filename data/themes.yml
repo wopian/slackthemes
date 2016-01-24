@@ -26,11 +26,11 @@
 - { colors: '#212121,#212121,#673AB7,#FFFFFF,#673AB7,#FFFFFF,#673AB7,#673AB7', type: 'dark', name: 'Deep Purple' }
 - { colors: '#212121,#212121,#3F51B5,#FFFFFF,#3F51B5,#FFFFFF,#3F51B5,#3F51B5', type: 'dark', name: 'Indigo' }
 - { colors: '#212121,#212121,#2196F3,#FFFFFF,#2196F3,#FFFFFF,#2196F3,#2196F3', type: 'dark', name: 'Blue' }
-- { colors: '#212121,#212121,#03A9F4,#FFFFFF,#03A9F4,#FFFFFF,#03A9F4,#03A9F4', type: 'dark', name: 'Light Blue' }
-- { colors: '#212121,#212121,#00BCD4,#FFFFFF,#00BCD4,#FFFFFF,#00BCD4,#00BCD4', type: 'dark', name: 'Cyan' }
+- { colors: '#212121,#212121,#03A9F4,#212121,#03A9F4,#FFFFFF,#03A9F4,#03A9F4', type: 'dark', name: 'Light Blue' }
+- { colors: '#212121,#212121,#00BCD4,#212121,#00BCD4,#FFFFFF,#00BCD4,#00BCD4', type: 'dark', name: 'Cyan' }
 - { colors: '#212121,#212121,#009688,#FFFFFF,#009688,#FFFFFF,#009688,#009688', type: 'dark', name: 'Teal' }
-- { colors: '#212121,#212121,#4CAF50,#FFFFFF,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', type: 'dark', name: 'Green' }
-- { colors: '#212121,#212121,#8BC34A,#FFFFFF,#8BC34A,#FFFFFF,#4CAF50,#8BC34A', type: 'dark', name: 'Light Green' }
+- { colors: '#212121,#212121,#4CAF50,#212121,#4CAF50,#FFFFFF,#4CAF50,#4CAF50', type: 'dark', name: 'Green' }
+- { colors: '#212121,#212121,#8BC34A,#212121,#8BC34A,#FFFFFF,#4CAF50,#8BC34A', type: 'dark', name: 'Light Green' }
 - { colors: '#212121,#212121,#CDDC39,#212121,#CDDC39,#FFFFFF,#CDDC39,#CDDC39', type: 'dark', name: 'Lime' }
 - { colors: '#212121,#212121,#FFEB3B,#212121,#FFEB3B,#FFFFFF,#FFEB3B,#FFEB3B', type: 'dark', name: 'Yellow' }
 - { colors: '#212121,#212121,#FFC107,#212121,#FFC107,#FFFFFF,#FFC107,#FFC107', type: 'dark', name: 'Amber' }
