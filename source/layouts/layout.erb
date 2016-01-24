@@ -420,10 +420,10 @@
           </div>
           <div class="contents_container monkey_scroller">
             <div class="contents" style="width: initial; max-height: calc(100vh - 60px - 118px)">
-              <div id="prefs_themes">
+              <div id="prefs_themes" style="max-height: calc(100vh - 60px - 118px - 2rem)">
                 <h2 class="inline_block" id="prefs_sidebar_theme">Dark Themes</h2>
                 <p></p>
-                <div class="theme-row" style="display: flex;flex-wrap: wrap;">
+                <div class="theme-row" style="display: flex; flex-wrap: wrap; max-height: calc(100vh - 60px - 118px - 2rem)">
                   <!-- Output themes -->
                   <%= yield %>
                 </div>
