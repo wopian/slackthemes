@@ -416,20 +416,22 @@
         <div class="show_sidebar active" id="fs_modal_bg"></div>
         <div class="fs_modal_header fs_modal_sidebar prefs_modal show_sidebar active" id="fs_modal">
           <div id="fs_modal_header">
-            <h3>Select a Material theme</h3>
+            <h3>Material Slack Themes</h3>
           </div>
           <div class="contents_container monkey_scroller" style="padding-top: 0; padding-right: 0">
             <div class="contents" style="width: initial;max-height: calc(100vh - 60px - 118px); overflow-y: scroll">
               <div id="prefs_themes">
-                <h2 class="inline_block" id="prefs_sidebar_theme" style="padding-top: 2rem">Dark Themes</h2>
+                <h2 class="inline_block" id="prefs_sidebar_theme" style="padding-top: 2rem">Sidebar Theme</h2>
                 <p></p>
                 <div class="theme-row" style="display: flex; flex-wrap: wrap">
                   <!-- Output themes -->
                   <%= yield %>
                 </div>
+                <!--
                 <hr class="clear_both large_top_margin large_bottom_margin">
                 <h3 class="inline_block bottom_margin">Coloured Themes</h3>
                 <br>
+                -->
               </div>
             </div>
             <div id="prefs_output" style="position: fixed;right: 0;bottom: 0;left: 0;z-index: 2001;background: white">
