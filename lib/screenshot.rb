@@ -9,7 +9,7 @@ class Screenshot
 
   def self.prepare
     Capybara.register_driver :poltergeist do |app|
-      Capybara::Poltergeist::Driver.new(app, window_size: [1368, 720])
+      Capybara::Poltergeist::Driver.new(app, window_size: [1280, 768])
     end
     Capybara.default_driver = :poltergeist
     Capybara.app = ::Middleman::Application.server.inst do
