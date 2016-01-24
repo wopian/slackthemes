@@ -98,7 +98,7 @@ end if ENV['ANALYTICS_ID']
 
 helpers do
   def themes
-    data.themes.sort_by { |theme| theme['name'] }.map do |theme|
+    data.themes.sort_by { |theme| [ theme['type'], theme['name'] ] }.map do |theme|
         OpenStruct.new(theme.merge(
             slug: theme['type'] + '_' + theme['name'].parameterize.underscore,
             digest: Digest::MD5.new.hexdigest(theme['colors'])
