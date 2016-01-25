@@ -9,8 +9,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 url: "/:slug",
                 controller: 'ThemeController',
                 params: {
-                    slug: { value: '<%= themes.first.slug %>' },
-                    name: { value: '<%= themes.first.name %>' }
+                    slug: { value: '<%= themes.first.slug %>' }
                 }
             });
         $urlRouterProvider.otherwise('/<%= themes.first.slug %>');
@@ -67,7 +66,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
             if ($scope.slug === 'custom') {
                 updateHash();
-            } else if (colors !== themes[$scope.slug]) {
+            } else if (colors !== themes[$scope.slug].colors) {
                 $state.go('theme', { slug: 'custom' }).then(updateHash);
             }
         });
