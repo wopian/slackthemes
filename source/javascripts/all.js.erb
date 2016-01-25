@@ -25,6 +25,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
         $scope.$on('$stateChangeSuccess', function() {
             $scope.slug = $stateParams.slug;
+            $scope.name = $stateParams.name;
         });
 
         $scope.$watch('slug', function(slug) {
