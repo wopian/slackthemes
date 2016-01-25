@@ -9,8 +9,7 @@ class Screenshot
 
   def self.prepare
     Capybara.register_driver :poltergeist do |app|
-      # TODO: Fix rendering error. See: https://travis-ci.org/wopian/material-slackthemes#L260
-      Capybara::Poltergeist::Driver.new(app, window_size: [1280, 3000])
+      Capybara::Poltergeist::Driver.new(app, window_size: [1280, 768])
 
     end
     Capybara.default_driver = :poltergeist
@@ -37,7 +36,7 @@ class Screenshot
 
     visit '/'
     within ".theme_#{theme.slug}" do
-      choose 'sidebar_theme_rd'
+      find('[name=sidebar_theme_rd]').trigger('click')
     end
     sleep 1
 

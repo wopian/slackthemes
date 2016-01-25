@@ -116,7 +116,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
-    poltergeist (1.6.0)
+    poltergeist (1.8.1)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
@@ -157,7 +157,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    websocket-driver (0.5.3)
+    websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
     xpath (2.0.0)
@@ -175,6 +175,6 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-pry (~> 0.0.4)
   mini_magick
-  poltergeist
+  poltergeist (~> 1.8.1)
   tzinfo-data
   wdm (~> 0.1.0)
