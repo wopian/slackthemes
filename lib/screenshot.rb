@@ -27,11 +27,11 @@ class Screenshot
 
   def generate_theme_image(builder)
     if File.exist? target_file
-      builder.say_status :exists, theme.type + " " + theme.name + "\t" + target_file, :blue
+      builder.say_status :exists, theme.type + " " + theme.name + "\t\t" + target_file, :blue
       return
     end
 
-    builder.say_status :generating, theme.type + " " + theme.name + "\t" + target_file, :green
+    builder.say_status :generating, theme.type + " " + theme.name + "\t\t" + target_file, :green
 
     visit '/'
     within ".theme_#{theme.slug}" do
