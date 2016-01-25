@@ -20,7 +20,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
     function($scope, $stateParams, $state, $location) {
         var themes = {
           <%= themes.map do |theme|
-            "'#{theme.slug}': '#{theme.colors}'"
+            "'#{theme.slug}' : '#{theme.colors}'",
+            "'#{theme.slug}' : '#{theme.name}'"
           end.join ",\n" %>
         };
 
@@ -57,6 +58,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             $scope.text_color = parts[5];
             $scope.active_presence = parts[6];
             $scope.mention_badge = parts[7];
+            $scope.channel_name = name;
 
             function updateHash() {
                 $location.hash(parts.map(function(part) {
