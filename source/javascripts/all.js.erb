@@ -57,7 +57,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             $scope.text_color = parts[5];
             $scope.active_presence = parts[6];
             $scope.mention_badge = parts[7];
-            $scope.team_name = name;
+            $scope.team_name = $scope.name;
 
             function updateHash() {
                 $location.hash(parts.map(function(part) {
