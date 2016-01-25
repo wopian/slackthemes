@@ -20,7 +20,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
     function($scope, $stateParams, $state, $location) {
         var themes = {
           <%= themes.map do |theme|
-            "'#{theme.slug}': '#{theme.colors}'"
+            "'#{theme.slug}': '#{theme.colors}'";
+            "'#{theme.name}': '#{theme.colors}'";
           end.join ",\n" %>
         };
 
