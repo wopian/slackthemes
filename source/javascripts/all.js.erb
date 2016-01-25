@@ -20,14 +20,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
     function($scope, $stateParams, $state, $location) {
         var themes = {
           <%= themes.map do |theme|
-            "'#{theme.slug}' : '#{theme.colors}'"
+            "'#{theme.slug}' : ['#{theme.colors}', '#{theme.name}']"
           end.join ",\n" %>
-        };
-        
-        var names = {
-            <%= themes.map do |theme|
-            "'#{theme.slug}' : '#{theme.name}'"
-            end.join ",\n" %>
         };
 
         $scope.$on('$stateChangeSuccess', function() {
@@ -46,7 +40,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
                 return;
             }
-            $scope.colors = themes[$scope.slug];
+            $scope.colors = themes[$scope.slug][0];
+            $scope.names = themes[$scope.slug][1];
             $state.go('theme', { slug: slug });
         });
 
@@ -63,7 +58,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             $scope.text_color = parts[5];
             $scope.active_presence = parts[6];
             $scope.mention_badge = parts[7];
-            $scope.team_name = names[$scope.slug];
+            $scope.team_name = names;
 
             function updateHash() {
                 $location.hash(parts.map(function(part) {
