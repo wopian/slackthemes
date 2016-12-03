@@ -22,3 +22,4 @@ gem 'poltergeist', '~> 1.9.0'
 gem 'mini_magick'
 
 gem 'dotenv'
+gem 'nokogiri', '>= 1.6.8'
