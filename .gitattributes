@@ -1,1 +1,8 @@
 data/themes.yml  merge=union
+linguist-vendored
+source/stylesheets/libs linguist-vendored
+source/stylesheets/normalize.css linguist-vendored
+source/stylesheets/rollup-client_core.css linguist-vendored
+source/stylesheets/rollup-client_general.css linguist-vendored
+source/stylesheets/rollup-client_primary.css linguist-vendored
+source/stylesheets/rollup-client_secondary.css linguist-vendored
