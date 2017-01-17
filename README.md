@@ -25,7 +25,7 @@ To add a new theme:
 ruby -v
 # Check Bundler 1.13 or newer is installed
 bundle -v
-# Check Gem 2.6 or newer is installed
+# Check RubyGems 2.6 or newer is installed
 gem -v
 # Install gems
 bundle install
