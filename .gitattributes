@@ -5,6 +5,4 @@ source/stylesheets/rollup-client_core.css       linguist-vendored
 source/stylesheets/rollup-client_general.css    linguist-vendored
 source/stylesheets/rollup-client_primary.css    linguist-vendored
 source/stylesheets/rollup-client_secondary.css  linguist-vendored
-source/javascripts/all.js.erb                   linguist-language=JavaScript
-source/layouts/layout.erb                       linguist-language=HTML
-source/index.html.erb                           linguist-language=Ruby
+*.erb                                           linguist-language=Ruby
