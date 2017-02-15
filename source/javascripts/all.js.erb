@@ -40,7 +40,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             }
             $scope.colors = themes[$scope.slug].colors;
             $scope.name = themes[$scope.slug].name;
-            $state.go('theme', { slug: slug }, { notify: false });
+            $state.go('theme', { slug: slug }, { location: 'replace' });
         });
 
         $scope.$watch('colors', function(colors) {
@@ -67,7 +67,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             if ($scope.slug === 'custom') {
                 updateHash();
             } else if (colors !== themes[$scope.slug].colors) {
-                $state.go('theme', { slug: 'custom' }, { notify: false }).then(updateHash);
+                $state.go('theme', { slug: 'custom' }, { location: 'replace' }).then(updateHash);
             }
         });
     }]);
