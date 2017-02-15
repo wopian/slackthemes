@@ -67,7 +67,7 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
             if ($scope.slug === 'custom') {
                 updateHash();
             } else if (colors !== themes[$scope.slug].colors) {
-                $state.go('theme', { slug: 'custom' }).then(updateHash);
+                $state.go('theme', { slug: 'custom' }, { notify: false }).then(updateHash);
             }
         });
     }]);
