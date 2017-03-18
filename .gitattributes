@@ -1,2 +1,2 @@
 data/themes.yml merge=union
-source          linguist-vendored
+source/**       linguist-vendored
