@@ -1,9 +1,2 @@
-data/themes.yml                                 merge=union
-source/stylesheets/libs                         linguist-vendored
-source/stylesheets/normalize.css                linguist-vendored
-source/stylesheets/rollup-client_core.css       linguist-vendored
-source/stylesheets/rollup-client_general.css    linguist-vendored
-source/stylesheets/rollup-client_primary.css    linguist-vendored
-source/stylesheets/rollup-client_secondary.css  linguist-vendored
-*.erb                                           linguist-language=Ruby
-source/javascripts/all.js.erb                   linguist-language=JavaScript
+data/themes.yml merge=union
+source          linguist-vendored
