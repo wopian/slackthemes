@@ -1,13 +1,9 @@
 language: ruby
 rvm:
-  - 2.3.3
+  - 2.4.1
 sudo: false
 cache: bundler
-before_install:
-  - mkdir travis-phantomjs
-  - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
-  - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
-  - export PATH=$PWD/travis-phantomjs:$PATH
+dist: trusty
 install: bundle install --jobs=8 --retry=3 --deployment --path=${BUNDLE_PATH:-vendor/bundle}
 script:
   - bundle exec middleman build
