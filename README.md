@@ -17,7 +17,7 @@ To add a new theme:
 [![Travis]][0]
 [![Code Climate Score]][1]
 [![Code Climate Issues]][2]
-[![Version Eye]][3]
+[![Gemnasium]][3]
 
 ### Setup
 ```bash
@@ -36,12 +36,12 @@ bundle install
 bundle exec middleman build
 ```
 
-[Travis]: https://img.shields.io/travis/wopian/material-slackthemes.svg?style=flat-square&label=travis
-[Code Climate Score]: https://img.shields.io/codeclimate/github/wopian/material-slackthemes.svg?style=flat-square
-[Code Climate Issues]: https://img.shields.io/codeclimate/issues/github/wopian/material-slackthemes.svg?style=flat-square
-[Version Eye]: https://www.versioneye.com/user/projects/56c63c6118b271003b3925f7/badge.svg?style=flat-square
+[Travis]:https://img.shields.io/travis/wopian/material-slackthemes.svg?style=flat-square&label=travis
+[Code Climate Score]:https://img.shields.io/codeclimate/github/wopian/material-slackthemes.svg?style=flat-square
+[Code Climate Issues]:https://img.shields.io/codeclimate/issues/github/wopian/material-slackthemes.svg?style=flat-square
+[Gemnasium]:https://img.shields.io/gemnasium/wopian/material-slackthemes.svg?style=flat-square
 
-[0]: https://travis-ci.org/wopian/material-slackthemes
-[1]: https://codeclimate.com/github/wopian/material-slackthemes
-[2]: https://codeclimate.com/github/wopian/material-slackthemes/issues
+[0]:https://travis-ci.org/wopian/material-slackthemes
+[1]:https://codeclimate.com/github/wopian/material-slackthemes
+[2]:https://codeclimate.com/github/wopian/material-slackthemes/issues
 [3]: https://www.versioneye.com/user/projects/56c63c6118b271003b3925f7
