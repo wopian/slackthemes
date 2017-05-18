@@ -14,3 +14,5 @@ after_success:
       git remote set-url origin "https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git";
       bundle exec middleman deploy;
     fi
+notifications:
+  email: false
