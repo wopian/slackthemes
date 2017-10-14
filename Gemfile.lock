@@ -39,7 +39,7 @@ GEM
     eventmachine (1.2.5)
     execjs (2.7.0)
     ffi (1.9.18)
-    haml (5.0.3)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     hike (1.2.3)
