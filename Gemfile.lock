@@ -89,7 +89,7 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    middleman-pry (1.0.1)
+    middleman-pry (1.0.2)
       middleman (>= 3.3, < 5)
       pry (~> 0.9)
     middleman-sprockets (3.5.0)
