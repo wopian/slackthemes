@@ -57,5 +57,5 @@ bundle exec middleman build
 [cc maintainability]:https://codeclimate.com/github/wopian/material-slackthemes
 [cc maintainability badge]:https://img.shields.io/codeclimate/maintainability/wopian/material-slackthemes.svg?style=flat-square
 
-[donate]:https://www.paypal.me/wopian
+[donate]:https://paypal.me/pools/c/7ZZSVeBON7
 [donate badge]:https://img.shields.io/badge/£-donate-ff69b4.svg?style=flat-square
