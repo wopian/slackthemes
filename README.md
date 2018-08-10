@@ -2,6 +2,8 @@
 
 [![web badge]][web]
 [![uptime badge]][web]
+[![travis badge]][travis]
+[![cc maintainability badge]][cc maintainability]
 [![donate badge]][donate]
 
 
@@ -19,9 +21,6 @@ To add a new theme:
 - Specify the primary colour's shade as defined by the [Material Guidelines]
 
 ## Development
-[![travis badge]][travis]
-[![gemnasium badge]][gemnasium]
-[![cc maintainability badge]][cc maintainability]
 
 ### Requirements
 
@@ -45,17 +44,14 @@ bundle exec middleman build
 [LIGHT]:https://slack.wopian.me/images/theme/light_blue-51e59a44420473473b3ac4dcf60c6348.png
 
 [web]:https://slack.wopian.me
-[web badge]:https://img.shields.io/website-up-down-green-red/https/slack.wopian.me.svg?style=flat-square
-[uptime badge]:https://img.shields.io/uptimerobot/ratio/7/m779740458-09508685f3ffd31c4acd254b.svg?style=flat-square
+[web badge]:https://flat.badgen.net/uptime-robot/status/m779740458-09508685f3ffd31c4acd254b
+[uptime badge]:https://flat.badgen.net/uptime-robot/month/m779740458-09508685f3ffd31c4acd254b
 
 [travis]:https://travis-ci.org/wopian/material-slackthemes
-[travis badge]:https://img.shields.io/travis/wopian/material-slackthemes.svg?style=flat-square
-
-[gemnasium]:https://gemnasium.com/github.com/wopian/material-slackthemes
-[gemnasium badge]:https://img.shields.io/gemnasium/wopian/material-slackthemes.svg?style=flat-square
+[travis badge]:https://flat.badgen.net/travis/wopian/material-slackthemes
 
 [cc maintainability]:https://codeclimate.com/github/wopian/material-slackthemes
 [cc maintainability badge]:https://img.shields.io/codeclimate/maintainability/wopian/material-slackthemes.svg?style=flat-square
 
 [donate]:https://paypal.me/wopian
-[donate badge]:https://img.shields.io/badge/support%20me%20on-paypal.me-ff69b4.svg?style=flat-square
+[donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
