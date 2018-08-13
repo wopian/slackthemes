@@ -4,6 +4,8 @@
 [![uptime badge]][web]
 [![travis badge]][travis]
 [![cc maintainability badge]][cc maintainability]
+[![cc debt badge]][cc debt]
+[![cc loc badge]][cc loc]
 [![donate badge]][donate]
 
 
@@ -51,7 +53,13 @@ bundle exec middleman build
 [travis badge]:https://flat.badgen.net/travis/wopian/material-slackthemes
 
 [cc maintainability]:https://codeclimate.com/github/wopian/material-slackthemes
-[cc maintainability badge]:https://img.shields.io/codeclimate/maintainability/wopian/material-slackthemes.svg?style=flat-square
+[cc maintainability badge]:https://flat.badgen.net/codeclimate/maintainability/wopian/material-slackthemes
+
+[cc debt]:https://codeclimate.com/github/wopian/material-slackthemes
+[cc debt badge]:https://flat.badgen.net/codeclimate/tech-debt/wopian/material-slackthemes
+
+[cc loc]:https://codeclimate.com/github/wopian/material-slackthemes
+[cc loc badge]:https://flat.badgen.net/codeclimate/loc/wopian/material-slackthemes
 
 [donate]:https://paypal.me/wopian
 [donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
