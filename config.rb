@@ -40,6 +40,10 @@ Dotenv.load
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+
+  activate :google_analytics do |ga|
+    ga.disabled = true
+  end
 end
 
 # Methods defined in the helpers block are available in templates
@@ -67,13 +71,14 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
-end
 
-activate :google_analytics do |ga|
-  # Property ID (default = nil)
-  ga.tracking_id = ENV['ANALYTICS_ID'] || 'TEST_GA_TRACKING_ID'
-  ga.enhanced_link_attribution = true
-  ga.minify = true
+  activate :google_analytics do |ga|
+    # Property ID (default = nil)
+    ga.tracking_id = ENV['ANALYTICS_ID'] || 'TEST_GA_TRACKING_ID'
+
+    # Tracking in development environment (default = true)
+    ga.development = false
+  end
 end
 
 activate :deploy do |deploy|
