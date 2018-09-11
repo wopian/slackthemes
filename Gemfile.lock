@@ -80,11 +80,11 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
-    middleman-google-analytics (2.0.1)
-      activesupport (~> 4.1)
+    middleman-google-analytics (3.0.0)
+      activesupport (>= 4.1, < 5.1)
       erubis
       middleman-core (>= 3.4)
-      uglifier (~> 2.6)
+      uglifier (>= 2.5, < 4.0)
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -166,7 +166,7 @@ DEPENDENCIES
   dotenv
   middleman (~> 3.4.1)
   middleman-deploy (~> 1.0.0)
-  middleman-google-analytics (~> 2.0.1)
+  middleman-google-analytics (~> 3.0.0)
   middleman-livereload (~> 3.4.6)
   middleman-pry (~> 1.0.0)
   mini_magick

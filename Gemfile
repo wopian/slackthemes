@@ -9,7 +9,7 @@ gem 'middleman-livereload', '~> 3.4.6'
 
 gem 'middleman-pry', '~> 1.0.0'
 gem 'middleman-deploy', '~> 1.0.0'
-gem 'middleman-google-analytics', '~> 2.0.1'
+gem 'middleman-google-analytics', '~> 3.0.0'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
