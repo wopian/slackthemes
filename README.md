@@ -29,6 +29,7 @@ To add a new theme:
 - Ruby >= 2.3
 - RubyGems >= 2.6
 - Bundler >= 1.13
+- PhantomJS
 
 ### Building
 ```bash
