@@ -42,7 +42,7 @@ configure :development do
   activate :livereload
 
   activate :google_analytics do |ga|
-    ga.disabled = true
+    ga.disable = true
   end
 end
 
