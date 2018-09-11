@@ -18,7 +18,7 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 gem 'capybara'
-gem 'poltergeist', '~> 1.9.0'
+gem 'poltergeist', '~> 1.18.1'
 gem 'mini_magick'
 
 gem 'dotenv'
