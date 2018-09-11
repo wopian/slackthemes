@@ -75,9 +75,8 @@ configure :build do
   activate :google_analytics do |ga|
     # Property ID (default = nil)
     ga.tracking_id = ENV['ANALYTICS_ID'] || 'TEST_GA_TRACKING_ID'
-
-    # Tracking in development environment (default = true)
-    ga.development = false
+    ga.enhanced_link_attribution = true
+    ga.minify = true
   end
 end
 
