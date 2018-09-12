@@ -76,7 +76,7 @@ GEM
       rack (>= 1.4.5, < 2.0)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-deploy (2.0.0.pre.alpha)
+    middleman-deploy (1.0.0)
       middleman-core (>= 3.2)
       net-sftp
       ptools
@@ -165,7 +165,7 @@ DEPENDENCIES
   capybara
   dotenv
   middleman (~> 3.4.1)
-  middleman-deploy (~> 2.0.0.pre.alpha)
+  middleman-deploy (~> 1.0.0)
   middleman-google-analytics (~> 3.0.0)
   middleman-livereload (~> 3.4.6)
   middleman-pry (~> 1.0.0)
@@ -175,5 +175,6 @@ DEPENDENCIES
   tzinfo-data
   wdm (~> 0.1.0)
 
+
 BUNDLED WITH
-   1.16.1
+   1.11.2
