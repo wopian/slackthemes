@@ -81,7 +81,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
 end if ENV['ANALYTICS_ID']
 
 helpers do
