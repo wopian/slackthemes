@@ -48,7 +48,7 @@ class Screenshot
     yield(file.path)
     MiniMagick::Tool::Convert.new do |convert|
       convert << file.path
-      convert.crop '220x120+0+170'
+      convert.crop '220x120+0+165'
       convert << target_file
     end
   ensure
