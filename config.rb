@@ -30,7 +30,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-end
+end if ENV['ANALYTICS_ID']
 
 helpers do
   def themes
