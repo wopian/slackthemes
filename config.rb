@@ -22,7 +22,7 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # Use relative URLs
   activate :relative_assets

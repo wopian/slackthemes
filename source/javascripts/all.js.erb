@@ -29,10 +29,8 @@ app.controller('ThemeController', ['$scope', '$stateParams', '$state', '$locatio
 
         $scope.$watch('slug', function(slug) {
             if (!slug) {
-                $scope.colors = themes.dark_amber.colors;
-                $scope.name = themes.dark_amber.name;
-                $state.go('theme', { slug: "dark_amber" }, { location: 'replace' });
-                return;
+                $scope.slug = "dark_amber";
+                slug = $scope.slug;
             }
             if (slug === 'custom') {
                 $scope.colors = $location.hash().split(',').map(function(part) {
