@@ -1,3 +1,10 @@
+@font-face{
+  font-family:Slack;
+  src:url(/fonts/slack/slack-icons-Regular.eot);
+  src:url(/fonts/slack/slack-icons-Regular.eot?#iefix) format("embedded-opentype"),url(/fonts/slack/slack-icons-Regular.woff) format("woff"),url(/fonts/slack/slack-icons-Regular.ttf) format("truetype"),url(/fonts/slack/slack-icons-Regular.svg#Slack) format("svg");
+  font-style:normal;
+  font-weight:400
+}
 .monkey_scroll_hider{
   overflow:hidden
 }
