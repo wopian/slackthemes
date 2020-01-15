@@ -4,7 +4,7 @@ title: Material Slack Themes
 
 <% themes.each do |theme| %>
     <label class="radio theme_label theme_<%= theme.slug %>">
-        <img src="/images/theme/<%= theme.slug %>-<%= theme.digest %>.png" class="theme_thumb" alt="<%= theme.name %>">
+        <img src="/images/theme/<%= theme.slug %>-<%= theme.digest %>.png" class="theme_thumb" alt="<%= theme.name %>" loading="lazy">
         <input name="sidebar_theme_rd" type="radio" value="<%= theme.slug %>" ng-model="slug"> <%= theme.name + (theme.shade == '' ? '' : ' ') + theme['shade'] %>
     </label>
 <% end %>
