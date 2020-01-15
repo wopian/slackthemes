@@ -49,7 +49,6 @@ class Screenshot
     MiniMagick::Tool::Convert.new do |convert|
       convert << file.path
       convert.crop '220x120+0+170'
-      convert.resize '165x90'
       convert << target_file
     end
   ensure
