@@ -1,9 +1,6 @@
 language: ruby
-rvm:
-  - 2.4.1
 sudo: false
 cache: bundler
-dist: trusty
 install: bundle install --jobs=8 --retry=3 --deployment --path=${BUNDLE_PATH:-vendor/bundle}
 script:
   - bundle exec middleman build

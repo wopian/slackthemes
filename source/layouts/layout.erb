@@ -1,46 +1,17 @@
 <!doctype html>
 <html class="supports_line_clamp supports_flexbox no_touch" lang="en">
-  <script language="JavaScript"> 
-    // Force redirect to HTTPS
-    var host = "slack.wopian.me";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-      window.location.protocol = "https";
-  </script>
-
   <head>
     <meta charset="utf-8">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="superfish" content="nofish">
     <meta name="author" content="wopian">
-
+     <link href="/favicon-32.png" rel="shortcut icon" sizes="16x16 32x32 48x48" type="image/png">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Material Slack Themes" %></title>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
-
-    <link href="/favicon-32.png" rel="shortcut icon" sizes="16x16 32x32 48x48" type="image/png">
-
-    <link href="/stylesheets/rollup-client_core.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_primary.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_general.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/rollup-client_secondary.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/libs/lato-2-compressed.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      :root #header + #content > #left > #rlblock_left { display: none !important; }
-    </style>
-    <style id="dynamic_content_max_width_rule" type="text/css">
-      #msgs_div div.dynamic_content_max_width { max-width: 1287px; }
-    </style>
-
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="light_theme <%= page_classes %>">
-    <%= google_analytics_tag %>
-
     <div ng-app="theme" ng-controller='ThemeController'>
       <style id="sidebar_theme_css" type="text/css">
         /* Column Background */
@@ -195,7 +166,7 @@
         #col_channels a,
         #team_menu { text-shadow: none !important; }
       </style>
-      
+
       <a href="//github.com/wopian/material-slackthemes" class="github-corner">
         <svg width="60" height="60" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0; z-index: 2000;">
           <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -205,8 +176,8 @@
       </a>
       <style>
         .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
-        
-        @keyframes octocat-wave { 
+
+        @keyframes octocat-wave {
           0%,100% { transform: rotate(0); }
           20%,60% { transform: rotate(-25deg); }
           40%,80% { transform: rotate(10deg); }
@@ -490,11 +461,32 @@
           </div>
         </div>
       </div>
+      <script>
+        // Force redirect to HTTPS
+        "slack.wopian.me"==window.location.host&&"https:"!=window.location.protocol&&(window.location.protocol="https")
+      </script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+      <link href="/stylesheets/rollup-client_core.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheets/rollup-client_primary.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheets/rollup-client_general.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheets/rollup-client_secondary.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheets/libs/lato-2-compressed.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        :root #header + #content > #left > #rlblock_left { display: none !important; }
+      </style>
+      <style id="dynamic_content_max_width_rule" type="text/css">
+        #msgs_div div.dynamic_content_max_width { max-width: 1287px; }
+      </style>
+      <%= stylesheet_link_tag "all" %>
       <style>
         .feature_modal h1 {
           font-size: 2rem;
         }
       </style>
+      <%= javascript_include_tag "all" %>
+      <script>
+        !function(){window.goatcounter=window.goatcounter||{},window.goatcounter.vars={no_onload:!0},window.addEventListener("hashchange",function(o){window.goatcounter.count({page:window.location.pathname+window.location.search+window.location.hash})});var o=document.createElement("script");window.counter="https://material_slack_themes.goatcounter.com/count",o.async=1,o.src="//gc.zgo.at/count.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(o,n)}()
+      </script>
     </body>
-
   </html>
