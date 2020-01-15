@@ -486,7 +486,26 @@
       </style>
       <%= javascript_include_tag "all" %>
       <script>
-        !function(){if("localhost"!==location.hostname||"127.0.0.1"!==location.hostname){window.goatcounter=window.goatcounter||{},window.goatcounter.vars={no_onload:!0},window.addEventListener("hashchange",function(o){window.goatcounter.count({page:window.location.pathname+window.location.search+window.location.hash})});var o=document.createElement("script");window.counter="https://material_slack_themes.goatcounter.com/count",o.async=1,o.src="//gc.zgo.at/count.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(o,n)}}()
+        (function() {
+          if (location.hostname !== "localhost" || location.hostname !== "127.0.0.1") {
+            window.goatcounter = window.goatcounter || {};
+            window.goatcounter.vars = {no_onload: true}
+
+            window.addEventListener('hashchange', function(e) {
+              window.goatcounter.count({
+                page: window.location.pathname + window.location.search + window.location.hash,
+              });
+            });
+
+            var script = document.createElement('script');
+            window.counter = 'https://material_slack_themes.goatcounter.com/count'
+            script.async = 1;
+            script.src = '//gc.zgo.at/count.js';
+
+            var ins = document.getElementsByTagName('script')[0];
+            ins.parentNode.insertBefore(script, ins)
+          }
+        })();
       </script>
     </body>
   </html>
