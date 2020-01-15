@@ -1,6 +1,4 @@
 language: ruby
-rvm:
-  - 2.5.2
 sudo: false
 cache: bundler
 install: bundle install --jobs=8 --retry=3 --deployment --path=${BUNDLE_PATH:-vendor/bundle}
