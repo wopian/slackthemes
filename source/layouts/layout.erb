@@ -5,17 +5,21 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Material Slack Themes" %></title>
     <meta name="description" content="Custom Material-inspired themes for all official Slack clients.">
     <meta name="superfish" content="nofish">
     <meta name="author" content="wopian">
-    <meta name="apple-mobile-web-app-title" content="Material Slack Themes">
-    <meta name="application-name" content="Material Slack Themes">
-    <meta name="theme-color" content="#fff">
-    <link href="/manifest.json" rel="manifest">
-    <link href="/favicon-32.png" rel="shortcut icon" sizes="16x16 32x32 48x48" type="image/png">
     <link href="https://gc.zgo.at" rel="preconnect">
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Material Slack Themes" %></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e91e63">
+    <meta name="apple-mobile-web-app-title" content="Material Themes">
+    <meta name="application-name" content="Material Themes">
+    <meta name="msapplication-TileColor" content="#e91e63">
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body class="light_theme <%= page_classes %>">
