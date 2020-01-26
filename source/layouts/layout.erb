@@ -452,6 +452,16 @@
       <%= javascript_include_tag "all" %>
       <script>"serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js")})</script>
       <script>!function(){window.goatcounter=window.goatcounter||{},window.goatcounter.vars={no_onload:!0},window.addEventListener("hashchange",function(o){window.goatcounter.count({page:window.location.pathname+window.location.search+window.location.hash})});var o=document.createElement("script");window.counter="https://material_slack_themes.goatcounter.com/count",o.async=1,o.src="//gc.zgo.at/count.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(o,n)}()</script>
+      <script>                   
+        function countTheme(slug, name, shade) {
+          var data = {
+            path: '#!/' + slug,
+            title: name + (shade ? ' ' : ''),
+            event: true
+          }
+          window.goatcounter.count(data)
+        }
+      </script>
     </div>
   </body>
 </html>
