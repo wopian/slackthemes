@@ -20,23 +20,7 @@
     <meta name="application-name" content="Material Themes">
     <meta name="msapplication-TileColor" content="#e91e63">
     <meta name="theme-color" content="#ffffff">
-    <script>
-      window.goatcounter = { no_onload: true }
-      function countTheme(slug, name, shade) {
-        const data = {
-          path: `#!/${slug}`,
-          title: name + (shade ? ` ${shade}` : ''),
-          event: true
-        }
-        
-        const t = setInterval(() => {
-          if (window.goatcounter) {
-            clearInterval(t)
-            window.goatcounter.count(data)
-          }
-        }, 200)
-       }
-    </script>
+    <script>window.goatcounter={no_onload:!0};function countTheme(t,n,o){const e={path:`#!/${t}`,title:n+(o?` ${o}`:""),event:!0},a=setInterval(()=>{window.goatcounter&&(clearInterval(a),window.goatcounter.count(e))},200)}</script>
     <script data-goatcounter="https://material_slack_themes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
 
