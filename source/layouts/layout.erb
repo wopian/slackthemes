@@ -20,6 +20,24 @@
     <meta name="application-name" content="Material Themes">
     <meta name="msapplication-TileColor" content="#e91e63">
     <meta name="theme-color" content="#ffffff">
+    <script>
+      window.goatcounter.no_onload = true
+      function countTheme(slug, name, shade) {
+        const data = {
+          path: `#!/${slug}`,
+          title: name + (shade ? ' ' : ''),
+          event: true
+        }
+        
+        const t = setInterval(() => {
+          if (window.goatcounter) {
+            clearInterval(t)
+            window.goatcounter.count(data)
+          }
+        }, 200)
+       }
+    </script>
+    <script data-goatcounter="https://material_slack_themes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
 
   <body class="light_theme <%= page_classes %>">
@@ -451,17 +469,6 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.24/angular-ui-router.min.js"></script>
       <%= javascript_include_tag "all" %>
       <script>"serviceWorker"in navigator&&window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js")})</script>
-      <script>!function(){window.goatcounter=window.goatcounter||{},window.goatcounter.vars={no_onload:!0},window.addEventListener("hashchange",function(o){window.goatcounter.count({page:window.location.pathname+window.location.search+window.location.hash})});var o=document.createElement("script");window.counter="https://material_slack_themes.goatcounter.com/count",o.async=1,o.src="//gc.zgo.at/count.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(o,n)}()</script>
-      <script>                   
-        function countTheme(slug, name, shade) {
-          var data = {
-            path: '#!/' + slug,
-            title: name + (shade ? ' ' : ''),
-            event: true
-          }
-          window.goatcounter.count(data)
-        }
-      </script>
     </div>
   </body>
 </html>
