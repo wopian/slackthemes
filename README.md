@@ -6,8 +6,6 @@
 [![cc maintainability badge]][cc maintainability]
 [![cc debt badge]][cc debt]
 [![cc loc badge]][cc loc]
-[![donate badge]][donate]
-
 
 Forked from [Slack Themes] to offer Material compliant colour schemes for [Slack]
 
@@ -61,6 +59,3 @@ bundle exec middleman build
 
 [cc loc]:https://codeclimate.com/github/wopian/material-slackthemes
 [cc loc badge]:https://flat.badgen.net/codeclimate/loc/wopian/material-slackthemes
-
-[donate]:https://paypal.me/wopian
-[donate badge]:https://flat.badgen.net/badge/support%20me%20on/paypal.me/pink
