@@ -98,7 +98,7 @@ GEM
     mini_magick (4.10.1)
     mini_portile2 (2.4.0)
     minitest (5.14.1)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     net-sftp (3.0.0)
       net-ssh (>= 5.0.0, < 7.0.0)
     net-ssh (6.1.0)
