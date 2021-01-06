@@ -97,7 +97,7 @@ GEM
     mime-types-data (3.2020.1104)
     mini_magick (4.11.0)
     mini_portile2 (2.5.0)
-    minitest (5.14.2)
+    minitest (5.14.3)
     multi_json (1.15.0)
     net-sftp (3.0.0)
       net-ssh (>= 5.0.0, < 7.0.0)
