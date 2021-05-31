@@ -96,9 +96,14 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0225)
     mini_magick (4.11.0)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.2)
+      net-ftp (~> 0.1)
     minitest (5.14.4)
     multi_json (1.15.0)
+    net-ftp (0.1.2)
+      net-protocol
+      time
+    net-protocol (0.1.0)
     net-sftp (3.0.0)
       net-ssh (>= 5.0.0, < 7.0.0)
     net-ssh (6.1.0)
@@ -143,6 +148,7 @@ GEM
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (1.4.1)
+    time (0.1.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uber (0.0.15)
