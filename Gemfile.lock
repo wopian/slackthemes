@@ -94,7 +94,7 @@ GEM
       middleman (>= 3.3, < 5)
       pry (~> 0.9)
     mini_magick (4.11.0)
-    mini_mime (1.1.0)
+    mini_mime (1.1.1)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
     net-sftp (3.0.0)
