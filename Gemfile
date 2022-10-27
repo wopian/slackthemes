@@ -15,7 +15,7 @@ gem 'middleman-deploy', '~> 1.0.0'
 # Windows does not come with time zone data
 # gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
-gem 'capybara', '>= 2.4.4'
+gem 'capybara', '>= 3.37.1'
 gem 'poltergeist', '~> 1.18.1'
 gem 'mini_magick'
 
